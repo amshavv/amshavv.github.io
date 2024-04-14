@@ -1,0 +1,674 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.my-container {
+    max-width: 1344px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header { /* границы, скругление, высота для шапки */
+    border: 2px solid #ff3000; /* хз насчет цвета */
+    border-radius: 20px;
+    /* height: 132px;  было 165 */
+}
+
+.description, .contacts, .photos-of-work {
+    /* границы, скругление, верхний отступ для описания,
+    контактов, фото работ */
+    border: 2px solid #000000;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+.advantages, footer { /* цвет, скругление и верхний отступ для преимуществ и подвала */
+    background-color: #FE5630; /* хз насчет цвета */
+    border-radius: 20px;
+    margin-top: 50px;
+
+}
+
+.description { /* высота для описания */
+    /* height: 390px; было 549 */
+    /* height: 439px; */
+    width: 50%;
+    padding: 40px 44px;
+}
+
+.advantages { /* высота для преимуществ */
+    height: 120px; /* было 165 */
+}
+
+.contacts { /* высота для контактов */
+    /* height: 440px; было 557 */
+}
+
+.photos-of-work { /* высота для фото работ */
+    /* height: 446px; было 565 */
+}
+
+footer { /* высота для подвала */
+    border-radius: 20px;
+    height: 272px; /* я думаю убрать */ /* было 345 */
+}
+
+/* .key-info {
+    flex: space-between;
+}  */
+
+.key-info { /* чтобы фото самосвала был в одну линию с описанием */
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+/* разобраться с этим короче */
+.photo-of-samosval {
+    /* левый и верхний отступ, ширина половина бокса с описанием для фото самосвала */
+    margin-top: 50px;
+    /* height: 390px; было 549. слишком большая выходит */
+    width: 50%;
+    margin-left: 20px;
+    /* max-width: 100%; */
+    /* height: auto;  */
+}
+
+.photos { /* чтобы фото работ в одну линию */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-left: 44px;
+    margin-right: 44px;
+    margin-top: 24px;
+    /* padding: 50px;
+    margin-top: 10px; хз */
+    /* align-items: center; делает вертикально по центру а мне не надо */
+}
+
+.photos img {
+    height: 315px; /* было 395 */
+    /* min-width: 3,62%; чушь */
+    /* min-height: 100px; */
+}
+/* разобраться с этим короче */
+
+.head-text {
+    color: rgb(255, 48, 0);
+    font-family: Gropled;
+    font-size: 28px; /* было 40 */
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-align: left;
+    text-transform: lowercase;
+    line-height: 30px; /* хз */
+}
+
+.simple-black-text {
+    color: rgb(0, 0, 0);
+    font-family: Gropled;
+    font-size: 24px; /* было 32 */
+    font-weight: 700;
+    line-height: 7px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    text-transform: lowercase;
+    line-height: 20px;
+}
+
+/* .header-text {
+    color: rgb(0, 0, 0);
+    font-family: Gropled;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 6px;
+    letter-spacing: 0;
+    text-align: left;
+    text-transform: lowercase;
+    line-height: 20px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+a {
+    color: rgb(0, 0, 0);
+} */
+
+.header-text {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    /* padding: 0 50px; */
+    color: rgb(0, 0, 0);
+    font-family: Gropled;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 6px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    text-transform: lowercase;
+    line-height: 20px;
+}
+
+.logo-box a {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* отступ лого от названия */
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.nav-links li {
+    /* margin: 0 10px; */
+    list-style: none;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 5px 44px; */
+}
+
+.white-text {
+    color: rgb(255, 255, 255);
+    font-family: Gropled;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 7px;
+    letter-spacing: 1px;
+    text-align: left;
+    text-transform: lowercase;
+    line-height: 20px;
+}
+
+/* супер! убрала бутстрап с атрибутов и норм все */
+.advantages {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 44px;
+}
+
+.icon-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    /* margin: 0 auto;   Равные отступы между блоками article. фигня */
+}
+/* супер! убрала бутстрап с атрибутов и норм все */
+
+.advantages img {
+    height: 45px;
+}
+
+.central-text {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contacts {
+    padding-left: 44px;
+    /* padding-bottom: 40px; уже есть в надписях нихний отступ */
+}
+
+.row-contact {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+    /* justify-content: ; */
+}
+
+.logo-text {
+    color: rgb(0, 0, 0);
+    font-family: Gropled;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 5px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    text-transform: lowercase;
+    line-height: 20px;
+}
+
+.footer-logo-text {
+    color: rgb(255, 255, 255);
+    font-family: Gropled;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 4px;
+    letter-spacing: 1px;
+    text-align: left;
+    text-transform: lowercase;
+    line-height: 20px;
+}
+
+.footer-text {
+    color: rgb(255, 255, 255);
+    font-family: Gropled;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 5px;
+    letter-spacing: 1px;
+    text-align: left;
+    text-transform: lowercase;
+    line-height: 20px;
+}
+
+.footer-logo-box a {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* отступ лого от названия */
+}
+
+footer {
+    padding: 40px 44px;
+}
+
+.description ul {
+    margin-bottom: 43px;
+    margin-left: 19px;
+    list-style-type: disc;
+}
+
+.footer-links, .footer-contacts {
+    height: 144px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.footer-links a {
+    margin-bottom: 50px;
+}
+
+.footer-contacts .one-row {
+    margin-bottom: 27px;
+}
+
+.left {
+    /* display: flex; */
+    /* justify-content: flex-start; */
+}
+
+.right {
+    display: flex;
+    justify-content: right;
+    gap: 80px;
+}
+
+.one-row {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+}
+
+.logo-box img {
+    height: 71px;
+}
+
+.contacts img {
+    height: 28px;
+}
+
+.footer-contacts img {
+    height: 24px;
+}
+
+.footer-logo-box img {
+    height: 66px;
+}
+
+.description .head-text {
+    margin-bottom: 16px;
+}
+/* 
+.col-md-6 {
+    padding-left: 0;
+    padding-right: 0;
+} */
+
+nav {
+    /* row-gap: 124px; */
+    /* flex-wrap: wrap; */
+}
+
+.nav-links {
+    /* gap: 93px; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+} 
+
+.nav-links li {
+    margin-left: 93px;
+}
+
+.row-contact, .one-row {
+    text-transform: none;
+}
+
+.logo-box {
+    margin-right: 28px;
+}
+
+/* a {
+    color: inherit; Использует цвет текста, установленный для родительского элемента 
+    text-decoration: none;
+} */
+
+
+/* a {
+	position: relative;
+	color: #000000; 
+	cursor: pointer;
+	line-height: 1; 
+	text-decoration: none; 
+
+}
+a:after {
+	display: block;
+	position: absolute;
+	left: 0; 
+	width: 0;
+	height: 2px; 
+	background-color: #ff3000; 
+	content: "";
+	transition: width 0.3s ease-out; 
+}
+
+a:hover:after,
+a:focus:after {
+	width: 100%; 
+} */
+
+header a {
+    color: #000000 !important;
+    /* text-decoration: none; Убираем стандартное подчеркивание */
+    transition: text-decoration 0.1s; /* Добавляем переход для свойства text-decoration */
+}
+
+header a:hover {
+    text-decoration: underline #ff3000; /* Плавное подчеркивание с красным цветом при наведении */
+    text-underline-offset: 2px;
+}
+
+footer a {
+    color: #FFFFFF !important;
+    text-decoration: none; /* Убираем стандартное подчеркивание */
+    transition: text-decoration 0.1s; /* Добавляем переход для свойства text-decoration */
+}
+
+footer a:hover {
+    text-decoration: underline #000000; /* Плавное подчеркивание с черным цветом при наведении */
+    text-underline-offset: 2px;
+}
+
+
+
+/*
+.nav-links a:hover {
+    color: black !important;  Цвет текста при наведении
+    border-bottom: 2px solid red;  Плавное подчеркивание 
+}
+
+.nav-links a::after {
+    display: block;
+	position: absolute;
+	left: 0; 
+	width: 0;
+	height: 2px; 
+	background-color: #ff3000; 
+	content: "";
+	transition: width 0.3s ease-out; 
+}*/
+
+
+/* .nav-links {
+    justify-items: flex-end;
+} */
+
+/* .logo-box {
+    justify-items: flex-start;
+} */
+
+/* nav {
+    margin: 0;
+} */
+/* .icon-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.icon-text img {
+    width: 100px; настройте размер иконок по вашему усмотрению
+} 
+
+.icon-text figcaption {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+} */
+
+/* .white-text {
+    display: flex;
+    justify-content: center;
+    padding: 0 50px;  Внутренние отступы справа и слева
+}
+
+.icon-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center; Вертикальное выравнивание содержимого 
+    margin: 0 10px;  Равномерное распределение отступов между внутренними блоками 
+} */
+
+/* .row {
+    margin: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-text {
+    flex: 1;
+    margin: 0 20px;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+} */
+
+
+/* li {
+    line-height: 20px;
+} */
+
+
+/*
+
+.margin {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.header {
+    height: 165px;
+    border: 2px solid #ff3000;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    /* position: relative; }*/
+
+
+/*
+.img-logo {
+    height: 100px;
+    margin: 33px 20px 32px 50px;
+}
+
+div-logo {
+    height: 76px;
+    left: 356px;
+    top: 45px;
+    bottom: 44px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: flex-end; }*/
+
+/*
+.text-header {
+    color: rgb(0, 0, 0);
+    font-family: Gropled;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 6px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: lowercase;
+}
+
+.description {
+    position: absolute;
+    width: 50%;
+    height: 549px;
+    top: 215px;
+    height: 165px;
+    border: 2px solid #ff3000;
+    border-radius: 20px;
+    margin-right: 20px;
+    display: flex;
+}
+
+.samosval {
+    height: 549px;
+    border-radius: 20px;
+    border-left: 850px;
+}
+
+.orange-block {
+    background-color: #ff3000;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    height: 165px;
+    justify-content: space-around; /* чтобы воровнять промежутки */
+/* }
+
+.white-text {
+    color: rgb(255, 255, 255);
+    font-family: Gropled;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 7px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: lowercase;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}
+
+.orange-block img {
+    width: 60px;
+}
+
+.photo-rabot {
+    justify-content: space-around;
+    height: 565px;
+    display: flex;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.photo-rabot img {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    width: 395px;
+}
+
+.contacts {
+    border: 2px solid #000000;
+    border-radius: 20px;
+    height: 557px;
+}
+
+.orange-text {
+    color: #ff3000;
+    font-family: Gropled;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 9px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: lowercase;
+}
+
+footer {
+    background-color: #ff3000;
+    border-radius: 20px;
+}*/
+
+
+
+
+
+
+
+/*
+.menu {
+    position: absolute;
+    width: 1680px;
+    height: 165px;
+    left: 120px;
+    right: 120px;
+    top: 0;
+    bottom: 2534px;
+}
+
+.logo {
+    position: absolute;
+    width: 166px;
+    height: 99.6px;
+    left: 170px;
+    top: 33px;
+    border: 0.5px solid rgba(0, 0, 0, 0);
+    background: rgb(0, 0, 0);
+}
+
+div {
+    border-radius: 15px;
+    border-color: orange;
+    border-width: 3px;
+}*/
+
