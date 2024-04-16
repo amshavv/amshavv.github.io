@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Gropled';
     src: url('font/Gropled-Bold.otf');
-  }
+}
 
 * {
     box-sizing: border-box;
@@ -76,7 +76,7 @@ nav a {
 .description, .contacts, .photos-of-work {
     border: 2px solid #000000;
     border-radius: 20px;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .description { 
@@ -95,7 +95,7 @@ nav a {
 }
 
 .photo-of-samosval {
-    margin-top: 50px;
+    margin-top: 40px;
     width: 50%;
     margin-left: 20px;
 }
@@ -107,11 +107,10 @@ nav a {
 }
 
 .advantages {
-    height: 120px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0 44px;
+    padding: 32px 44px;
 }
 
 .advantages img {
@@ -120,6 +119,7 @@ nav a {
 
 .contacts {
     padding-left: 44px;
+    padding-right: 44px;
 }
 
 .contacts img {
@@ -138,13 +138,13 @@ nav a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 40px;
     margin-left: 44px;
     margin-right: 44px;
     margin-top: 24px;
 }
 
 .photos img {
+    margin-bottom: 40px;
     height: 315px; 
 }
 
@@ -277,7 +277,7 @@ nav a {
 }
 
 .footer-contacts img {
-    height: 24px;
+    height: 19px;
 }
 
 .row-contact, .one-row {
@@ -286,8 +286,9 @@ nav a {
 
 footer { 
     border-radius: 20px;
-    height: 272px;
+    /* height: 272px; */
     padding: 40px 44px;
+    padding-bottom: 88px;
 }
 
 footer a {
@@ -307,4 +308,100 @@ footer a:hover {
 
 .row {
     margin: 0;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .logo-box {
+        margin-bottom: 10px;
+    }
+    
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .nav-links li {
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+    .key-info {
+        flex-direction: column;
+    }
+
+    .description {
+        width: 100%; 
+    }
+
+    .key-info img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .advantages {
+        flex-direction: column;
+        padding-bottom: 15px; 
+    }
+    
+    .advantages img {
+        margin: 0 auto;
+    }
+
+    .icon-text {
+        margin-bottom: 15px;
+    }
+
+    .photos {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-logo-box a {
+        display: flex;
+        margin-bottom: 10px;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .right {
+        flex-direction: column;
+        align-items: center;    
+        gap: 0;    
+    }
+    
+    .footer-links, .footer-contacts {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 15px;
+        height: auto;
+    }
+
+    .footer-links a {
+        margin-bottom: 0;
+    }
+    
+    .footer-contacts {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .footer-contacts .one-row {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .one-row {
+        gap: 8px;
+    }
 }
