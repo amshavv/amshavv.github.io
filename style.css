@@ -348,6 +348,10 @@ footer a:hover {
         margin-left: 0;
     }
 
+    .description ul {
+        list-style-type: disc;
+    }
+
     .advantages {
         flex-direction: column;
         padding-bottom: 15px; 
@@ -382,9 +386,8 @@ footer a:hover {
 
     .footer-logo-box a {
         display: flex;
-        margin-bottom: 10px;
         justify-content: center;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
 
     .right {
